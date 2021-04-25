@@ -10,7 +10,7 @@ function App() {
       <div className="app__post">
         {/* <div className="post__left">
           <Post />
-      
+       this is dummy text
         </div> */}
         <div className="post__right">
 

@@ -76,11 +76,9 @@ export default function PrimarySearchAppBar() {
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
   };
-
   const handleMenuClose = () => {
     setAnchorEl(null);
     handleMobileMenuClose();
@@ -111,7 +109,7 @@ export default function PrimarySearchAppBar() {
 
 
 
-//   This is will be rendered on only mobile 
+//   This is will be rendered on only on mobile
   const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
     <Menu
