@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import PrimarySearchAppBar from "./components/AppBar";
+import Post from "./Post";
+import InstagramEmbed from "react-instagram-embed";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <PrimarySearchAppBar />
+      <div className="app__post">
+        {/* <div className="post__left">
+          <Post />
+      
+        </div> */}
+        <div className="post__right">
+
+        <InstagramEmbed
+  clientAccessToken='<appId>|<clientToken>'
+  url='https://instagr.am/p/Ytlfl/'
+  maxWidth={375}
+  hideCaption={false}
+  containerTagName='div'
+  injectScript
+  protocol=''
+  onLoading={() => {}}
+  onSuccess={() => {}}
+  onAfterRender={() => {}}
+  onFailure={() => {}}
+/>
+        </div>
+      </div>
+      {/* <Header /> */}
+      <h1>Hello world</h1>
     </div>
   );
 }
